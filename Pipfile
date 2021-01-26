@@ -10,6 +10,8 @@ requests = "*"
 praw = "*"
 pandas = "*"
 python-decouple = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [requires]
 python_version = "3.7"

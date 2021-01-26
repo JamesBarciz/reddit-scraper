@@ -42,15 +42,13 @@ TEMP_SUBREDDITS = [
 # Allows output to be printed in a less-cumbersome view
 pp = pprint.PrettyPrinter(indent=2)
 
-# Will store the subreddits to be displayed
 output = []
-
 
 def get_top_subreddits(subreddits, time_filter='day', limit=25):
   """
   get_top_subreddits(subreddits: [str, List], time_filter='day': str, limit=25: int)
 
-  Returns JSON of list of subreddits which include various attributes.
+  Returns a list of JSON for subreddits passed into function.
   
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -103,30 +101,3 @@ get_top_subreddits(TEMP_SUBREDDITS)
 
 for entry in output:
   pp.pprint(entry)
-
-
-# [{}, {}, {}]
-
-
-
-# DICT_TYPE1 = {
-#   'metadata': {
-#     {
-#       0: {
-#         'subreddit': 'something',
-#         'title': 'something',
-#         'id': 'something',
-#         'score': 'something',
-#         'link_url': 'something',
-#         'post_url': 'something',
-#         'body': 'something'
-#       },
-#       1: {
-#         'subreddit': 'something',
-#         'title': 'something',
-#         'id': 'something',
-#         'score': 'something',
-#         'link_url': 'something',
-#         'post_url': 'something',
-#         'body': 'something'
-# }}}}

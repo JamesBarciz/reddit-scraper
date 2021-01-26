@@ -39,12 +39,7 @@ TEMP_SUBREDDITS = [
   'scala', 'scheme', 'shell', 'smalltalk', 'sql', 'swift', 'tcl', 'visualbasic'
 ]
 
-# Allows output to be printed in a less-cumbersome view
-pp = pprint.PrettyPrinter(indent=2)
-
-output = []
-
-def get_top_subreddits(subreddits, time_filter='day', limit=25):
+def get_top_subreddits(subreddits, output, time_filter='day', limit=25):
   """
   get_top_subreddits(subreddits: [str, List], time_filter='day': str, limit=25: int)
 
@@ -95,9 +90,9 @@ def get_top_subreddits(subreddits, time_filter='day', limit=25):
     
       output.append(field_dict)
     
-    time.sleep(3)
+    time.sleep(0.5)
+  
+  return output
 
-get_top_subreddits(TEMP_SUBREDDITS)
 
-for entry in output:
-  pp.pprint(entry)
+# print(get_top_subreddits(TEMP_SUBREDDITS))

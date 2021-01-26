@@ -29,14 +29,14 @@ assert REDDIT.user.me() == AUTH_USERNAME
 
 # List of subrettits to gather from REDDIT API
 TEMP_SUBREDDITS = [
-  'ada', 'APLJK', 'asm', 'ATS', 'awk', 'c_programming', 'clojure', 'cobol',
-  'coffeescript', 'coldfusion', 'coq', 'cpp', 'cpp_questions', 'csharp',
-  'd_language', 'delphi', 'erlang', 'forth', 'fortran', 'fsharp', 'golang',
-  'gpgpu', 'groovy', 'haskell', 'Ioke', 'IoLanguage', 'java', 'javahelp',
-  'javascript', 'LearnJavaScript', 'latex', 'lisp', 'lua', 'matlab', 'oberon',
-  'objectivec', 'ocaml', 'pascal', 'perl', 'php', 'PostScript', 'prolog',
-  'python', 'learnpython', 'racket', 'Rlanguage', 'rstats', 'ruby', 'rust',
-  'scala', 'scheme', 'shell', 'smalltalk', 'sql', 'swift', 'tcl', 'visualbasic'
+  'ada', 'APLJK' #, 'asm', 'ATS', 'awk', 'c_programming', 'clojure', 'cobol',
+  #'coffeescript', 'coldfusion', 'coq', 'cpp', 'cpp_questions', 'csharp',
+  #'d_language', 'delphi', 'erlang', 'forth', 'fortran', 'fsharp', 'golang',
+  #'gpgpu', 'groovy', 'haskell', 'Ioke', 'IoLanguage', 'java', 'javahelp',
+  #'javascript', 'LearnJavaScript', 'latex', 'lisp', 'lua', 'matlab', 'oberon',
+  #'objectivec', 'ocaml', 'pascal', 'perl', 'php', 'PostScript', 'prolog',
+  #'python', 'learnpython', 'racket', 'Rlanguage', 'rstats', 'ruby', 'rust',
+  #'scala', 'scheme', 'shell', 'smalltalk', 'sql', 'swift', 'tcl', 'visualbasic'
 ]
 
 def get_top_subreddits(subreddits, output, time_filter='day', limit=25):

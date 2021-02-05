@@ -39,7 +39,7 @@ TEMP_SUBREDDITS = [
   'scala', 'scheme', 'shell', 'smalltalk', 'sql', 'swift', 'tcl', 'visualbasic'
 ]
 
-def get_top_subreddits(subreddits, output, time_filter='day', limit=25):
+def get_top_subreddits(subreddits, output, time_filter='day', limit=5):
   """
   get_top_subreddits(subreddits: [str, List], time_filter='day': str, limit=25: int)
 

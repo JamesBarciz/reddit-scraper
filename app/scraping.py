@@ -1,6 +1,5 @@
 # Standard packages
 import pandas as pd
-import pprint
 from decouple import config
 import time
 
@@ -87,6 +86,3 @@ def get_top_subreddits(subreddits, output, time_filter='day', limit=5):
     time.sleep(0.5)
   
   return output
-
-
-# print(get_top_subreddits(TEMP_SUBREDDITS))

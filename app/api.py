@@ -9,4 +9,6 @@ app = FastAPI()
 async def root():
     output = []
     get_top_subreddits(subreddits=TEMP_SUBREDDITS, output=output)
-    return output
+    return {
+        'Process Worked'
+    }
